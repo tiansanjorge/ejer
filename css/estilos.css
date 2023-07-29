@@ -1,0 +1,1788 @@
+/*COLORES:
+BORDO: #860C0C
+AMARILLO: #FFBD21*/
+
+
+* {
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+
+html {
+  height: 100%;
+  min-height: 100%;
+  width: 100%;
+}
+
+body {
+  font-family: "Montserrat", arial;
+  height: 100%;
+  min-height: 100%;
+  width: 100%;
+  background: #000;
+}
+
+header {
+  position: fixed;
+  left: 0;
+  top: 0;
+  background: #000;
+  width: 100%;
+  border-bottom: 2px solid #FFBD21;
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding: 0.5% 0;
+} 
+header .contenedor-headerx {
+  display: none;
+}
+header .contenedor-header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  /*margin-top: 1.5%;*/
+  width: 75%;
+}
+header .contenedor-header img {
+  width: 12%;
+  /*margin-left: 15%;*/
+}
+
+header .contenedor-header .menu {
+   width: 60%;
+   text-align: center;
+
+}
+header .contenedor-header .menu a {
+  color: #fff;
+  text-decoration: none;
+  margin-right: 6%;
+  font-size: 15px;
+  font-weight: 400;
+}
+header .contenedor-header .menu .a1 {
+  margin-right: 0;
+}
+
+header .contenedor-header .menu a:hover {
+  color: #FFBD21;
+  /*color: #A20E0E;*/
+  transition: all 0.4s ease;
+}
+header .contenedor-header .celymail {
+  width: 25%;
+  text-align: center;
+  margin: auto 0;
+}
+header .contenedor-header .celymail .fa-whatsapp {
+  font-size: 20px;
+  color: #25d366;
+  margin-right: 5%;
+  vertical-align: middle;
+}
+header .contenedor-header .celymail .fa-envelope {
+  font-size: 18px;
+  color: #168de2;
+  margin-right: 5%;
+  vertical-align: middle;
+}
+header .contenedor-header .celymail p {
+  font-size: 14px;
+  font-weight: 500;
+  color: #fff;
+  margin: 0;
+}
+header .navegacion{
+  display: none;
+}
+.relleno{
+  height: 110px;
+  background: #000;
+}
+
+/*-----------------INICIO------------------*/
+
+.inicio {
+  height: 83%;
+  min-height: 900px;
+  color: #fff;
+  background: url("../img/autos.jpg"), #000;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+}
+.inicio .contenedor-ambosx {
+  display: none;
+}
+
+.inicio .contenedor-ambos {
+  width: 80%;
+  height: 100%;
+  margin: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.inicio .contenedor-ambos .frase {
+  width: 45%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.inicio .contenedor-ambos .frase h1 {
+  font-size: 35px;
+  font-weight: 600;
+  line-height: 1.25;
+  color: #fff;
+  vertical-align: middle;
+  margin: 0 auto 10%;
+}
+
+.inicio .contenedor-ambos .frase .p1 {
+  font-size: 35px;
+  line-height: 1.25;
+  color: #fff;
+  font-weight: 300;
+  vertical-align: middle;
+  margin: 0;
+}
+
+
+.inicio .contenedor-ambos .contenedor-formulario {
+  width: 40%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.inicio .contenedor-ambos .contenedor-formulario .formulario {
+  margin: 0 auto;
+  height: 60%;            
+  width: 90%;
+  font-size: 20px;
+
+}
+.inicio .contenedor-ambos .contenedor-formulario .asesor {
+  height:  18%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.inicio .contenedor-ambos .contenedor-formulario .asesor p{
+  font-size: 30px;
+  font-weight: 500;
+  line-height: 1.25;
+  text-align: center;
+}
+
+.inicio .contenedor-ambos .contenedor-formulario .formulario input[type=text] {
+  height: 15%;
+  width: 47.1%;
+  color: #FFBD21;
+  background: none;
+  outline: none;
+  border: none;
+  border-bottom: 1px solid #fff;
+}
+.inicio .contenedor-ambos .contenedor-formulario .formulario .nombre {
+  margin-right: 4%;
+}
+.inicio .contenedor-ambos .contenedor-formulario .formulario input[type=text]::placeholder {
+  color: #fff;
+}
+.inicio .contenedor-ambos .contenedor-formulario .formulario input[type=email] {
+  width: 100%;
+  height: 15%;
+  margin-top: 3%;
+  background: none;
+  color: #FFBD21;
+  outline: none;
+  border: none;
+  display: block;
+  border-bottom: 1px solid #fff;
+}
+.inicio .contenedor-ambos .contenedor-formulario .formulario input[type=email]::placeholder {
+  color: #fff;
+}
+.inicio .contenedor-ambos .contenedor-formulario .formulario textarea {
+  background: none;
+  color: #FFBD21;
+  outline: none;
+  border: none;
+  border-bottom: 1px solid #fff;
+  resize: none;
+  width: 100%;
+  height: 45%;
+  margin-top: 5%;
+}
+.inicio .contenedor-ambos .contenedor-formulario .formulario textarea::placeholder {
+  color: #fff;
+}
+.inicio .contenedor-ambos .contenedor-formulario .formulario input[type=submit] {
+  cursor: pointer;
+  background: none;
+  border: none;
+  border-radius: 15px;
+  padding: 1% 2%;
+  color: #fff;
+  margin: 5% auto 0;
+  display: block;
+}
+
+.inicio .contenedor-ambos .contenedor-formulario .formulario input[type=submit]:hover {
+  border: solid 2px #FFBD21;
+  color: #FFBD21 ;
+  transition: all 0.2s ease;
+}
+
+.inicio .contenedor-ambos .contenedor-formulario .whatsapp{
+  height: 22%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.inicio .contenedor-ambos .contenedor-formulario .whatsapp .p2 {
+  font-size: 30px;
+  font-weight: 500;
+  line-height: 1.25;
+  margin: 0 auto 0;
+  text-align: center
+}
+
+.inicio .contenedor-ambos .contenedor-formulario .whatsapp .conte-boton {
+  margin: 0 auto 3%;
+  height: 40%;
+  width: 40%;
+  border-radius: 4.5px;
+  overflow: hidden;
+}
+.inicio .contenedor-ambos .contenedor-formulario .whatsapp .conte-boton p {
+  font-size: 20px;
+  font-weight: 400;
+  text-align: center;
+  color: #fff;
+  margin: 0 0;
+}
+.inicio .contenedor-ambos .contenedor-formulario .whatsapp .conte-boton .fa-whatsapp {
+  font-size: 20px;
+  color: #fff;
+  margin-right: 5%;
+  vertical-align: middle;
+}
+.inicio .contenedor-ambos .contenedor-formulario .whatsapp .conte-boton a {
+  margin: auto;
+  display: block;
+  font-size: 18px;
+  font-weight: 400;
+  text-align: center;
+  color: #fff;
+  background: #128c7e;
+  text-decoration: none;
+  padding: 8% 0;
+  border-radius: 25px
+}
+
+.inicio .contenedor-ambos .contenedor-formulario .whatsapp .conte-boton a:hover {
+  border: solid 2px #fff;
+  border-radius: 25px;
+  font-weight: 500;
+  transition: all 0.2s ease;
+}
+
+.sinadelanto{
+  height: auto;
+  width: 100%;
+  background: #000;
+  color: #FFf;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  
+}
+
+.sinadelanto .caja{
+  width: 95%;
+}
+
+.sinadelanto .caja p{
+  margin: 1% 0 1%;
+  background: #000;
+  font-weight: 400;
+  font-size: 20px;
+  text-align: center;
+  line-height: 1.25;
+}
+
+/*----------NOS ESPECIALIZAMOS EN ---------*/
+
+.especialidad {
+  width: 100%;
+  height: 45%;
+  min-height: 475px;
+  background: #EDEDED;
+  color: #000;
+}
+
+.especialidad .contenedor-todo{
+  width: 80%;
+  height: 100%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.especialidad .contenedor-todo .titulo{
+  display:flex;
+  flex-direction: row;
+  justify-content: space-between;
+  height:  20%;
+}
+.especialidad .contenedor-todo .titulo .parrafo{
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.especialidad .contenedor-todo .titulo p{
+  margin: 0;
+  font-size: 35px;
+  font-weight: 700;
+  line-height: 1.25;
+  text-align: center;
+}
+
+.especialidad .contenedor-todo .titulo hr{
+  height: 1px;
+  width:25%;
+  display: block;
+  margin: auto;
+  background: #000;
+}
+
+.especialidad .contenedor-todo .contenedor-padre{
+  width: 100%;
+  height: 70%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.especialidad .contenedor-todo .contenedor-padre .hijo
+{
+  width:33.33%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.especialidad .contenedor-todo .contenedor-padre .hijo img{
+  width: 45%;
+  display: block;
+  margin: 0 auto 0;
+}
+
+.especialidad .contenedor-todo .contenedor-padre .hijo p{
+  font-size: 27px;
+  font-weight: 600;
+  line-height: 1.25;
+  text-align: center;
+  margin: 5% 0 0;
+}
+/*-----------------QUIENES SOMOS--------------*/
+
+.perfil {
+  height: 55%;
+  min-height: 525px;
+  width: 100%;
+  background: #0f0f0f;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  overflow: visible;
+}
+.perfil .contenedor-perfilx {
+  display: none;
+}
+.perfil .contenedor-perfil {
+  width: 65%;
+  margin: 0 auto 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.perfil .contenedor-perfil .padre-izq-perfil {
+  width: 25%;
+  text-align: center;
+}
+.perfil .contenedor-perfil .padre-izq-perfil p {
+  font-size: 45px;
+  font-weight: 700;
+  line-height: 1.25;
+  margin: 0 auto 0;
+}
+
+.perfil .contenedor-perfil .padre-der-perfil {
+  width: 72%;
+  display: flex;
+  align-items: flex-end;
+}
+
+.perfil .contenedor-perfil .padre-der-perfil p {
+  font-size: 20px;
+  font-weight: 300;
+  line-height: 1.25;
+  margin: 0 0 0 0 ;
+}
+.perfil .contenedor-perfil .padre-der-perfil2 {
+  display: none;
+}
+
+.perfil .contenedor-perfil2 {
+  width: 65%;
+  height:  50%;
+  margin: 0 auto 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.perfil .contenedor-perfil2 .padre-izq-perfil2 {
+  margin: 0;
+  width: 75%;
+}
+.perfil .contenedor-perfil2 .padre-izq-perfil2 p {
+  font-size: 20px;
+  font-weight: 300;
+  line-height: 1.25;
+  margin:3.5% 0 0;
+}
+ 
+.perfil .contenedor-perfil2 .padre-der-perfil3 {
+  width: 25%;
+  /*display: flex;
+  justify-content: center;*/
+}
+.perfil .contenedor-perfil2 .padre-der-perfil3 img {
+  display: block;
+  margin: 10% auto 15%;
+  width: 55%;
+  border-radius: 10%;
+}
+
+/*----------degrade---------*/
+.degrade{
+  background: #0f0f0f;
+  background: linear-gradient(180deg, rgba(15,15,15,1) 0%, rgba(255,189,33,1) 100%);
+  height: 3%;
+  min-height: 32px;
+  
+}
+
+/*-----------------NOS ELIGEN--------------*/
+
+.nos-eligen {
+  height: 70%;
+  min-height: 635px;
+  width: 100%;
+  color: #000;
+  background: #FFBD21;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  overflow: hidden;
+  border: none;
+}
+.nos-eligen .titu{
+  margin: 0 0 0 12.5%;
+}
+
+.nos-eligen .titu p{
+  font-size: 45px;
+  font-weight: 700;
+  line-height: 1.25;
+  margin: 0;
+}
+.nos-eligen .padrex{
+    display: none;
+  }
+.nos-eligen .gran-padre{
+  width: 75%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.nos-eligen .gran-padre .padre1{
+  width:  40%;
+}
+
+.nos-eligen .gran-padre .padre1 .titular{
+  font-size: 22px;
+  font-weight: 600;
+  line-height: 1.25;
+  background: #F4B622;
+  border-radius: 25px;
+  padding: 0.5% 2%;
+  margin: 0 5% 0 0;
+}
+
+.nos-eligen .gran-padre .padre1 p{
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 1.25;
+  margin:1% 0 0.5%;
+}
+.nos-eligen .gran-padre .padre2{
+  width:  55%;
+  margin: 0 auto;
+}
+
+.nos-eligen .gran-padre .padre2 .titular{
+  font-size: 22px;
+  font-weight: 600;
+  line-height: 1.25;
+  background: #F4B622;
+  padding: 0.5% 2%;
+  border-radius: 25px;
+  margin: 0 5% 0 0;
+}
+.nos-eligen .gran-padre .padre2 p{
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 1.25;
+  margin:1% 0 0.5%;
+}
+
+/*-----------------INFO DE CONTACTO--------------*/
+.info{
+  height: 50%;
+  min-height: 550px;
+  width: 100%;
+  color: #000;
+  background: url("../img/info.jpg"), #fff;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.info .asociados{
+  width: 100%;
+  background: #000;
+  color: #fff;
+  padding: 1% 0;
+}
+
+.info .asociados p{
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 1.25;
+  margin: 0;
+  text-align: center;
+}
+
+.info .abogados{
+  width: 75%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.info .abogados p{
+  font-size: 40px;
+  font-weight: 600;
+  line-height: 1.4;
+  margin: 0;
+  text-align: center;
+}
+
+.info .abogados .conector{
+  margin: 0 5%;
+}
+.info .abogados .liliana{
+  width: 40%;
+}
+.info .abogados .emiliano{
+  width: 40%;
+}
+
+.info .gran-padre{
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.info .gran-padre .padre1{
+  width: 90%;
+  text-align: center;
+}
+
+.info .gran-padre .padre1 .fa-whatsapp{
+  font-size: 25px;
+  color: #25d366;
+  margin-right: 2%;
+  vertical-align: middle;
+}
+.info .gran-padre .padre1 .fa-envelope{
+  font-size: 25px;
+  color: #168de2;
+  margin-right: 2%;
+  vertical-align: middle;
+}
+.info .gran-padre .padre1 p {
+  font-size: 25px;
+  font-weight: 500;
+  color: #000;
+  margin: 0;
+}
+
+.info .ubicacion{
+  width: 50%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.info .ubicacion p{
+  font-size: 25px;
+  font-weight: 500;
+  color: #000;
+  margin: 0;
+}
+
+.info .ubicacion .fa-map-marker-alt {
+  font-size: 25px;
+  color: #FFBD21;
+  margin-right: 3%;
+  vertical-align: middle;
+}
+
+.info .boton{
+  margin: 0 auto 2%;
+  height: 15%;
+  width: 30%;
+  text-align: center;
+}
+
+
+.info  .boton a {
+  display: block;
+  font-size: 20px;
+  font-weight: 600;
+  text-decoration: none;
+  line-height: 1.25;
+  border-radius: 40px;
+  color: #000;
+  padding: 4%;
+  background: #FFBD21;
+}
+
+.info .boton a:hover {
+  font-weight: 700;
+  color: #000;
+  background: #F8D176;
+  border: solid 3px #FFBD21;
+  transition: all 0.2s ease;
+  /*F4B622*/
+}
+/*-----------------FOOTER--------------*/ 
+
+footer {
+  height: 5%;
+  /*min-height: 54px;*/
+  width: 100%;
+  background: #000;
+  border-top: 3px solid #FFBD21;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+footer p{
+  font-size: 15px;
+  font-weight: 400;
+  color: #fff;
+  text-align: center;
+  margin: 0;
+}
+
+@media screen and (max-width: 1775px) {
+  .relleno{
+    height: 100px;
+  }
+  .inicio {
+  min-height: 700px;
+}
+  .info .boton{
+  width: 35%;
+  }
+  .especialidad .contenedor-todo .contenedor-padre .hijo img{
+  width: 50%;
+  display: block;
+  margin: 0 auto 0;
+}
+}
+
+@media screen and (max-width: 1600px) {
+  header .contenedor-header{
+    width: 85%;
+  }
+  .relleno{
+    height: 90px;
+  }
+  .perfil .contenedor-perfil2 .padre-der-perfil3 img {
+  width: 65%;
+  }
+  .info .abogados{
+  width: 85%;
+  }
+  .especialidad {
+    height: 35%;
+    min-height: 400px;
+  }
+}
+@media screen and (max-width: 1500px) {
+  .relleno{
+    height: 90px;
+  }
+}
+
+@media screen and (max-width: 1450px) {
+  .relleno{
+    height: 85px;
+  }
+}
+@media screen and (max-width: 1400px) {
+  header .contenedor-header{
+    width: 90%;
+  }
+  header .contenedor-header .celymail{
+    width: 27%;
+  }
+  .inicio .contenedor-ambos .contenedor-formulario .formulario {
+  margin: 0;
+  width: 100%;
+  }
+  .perfil .contenedor-perfil {
+  width: 75%;
+  }
+  .perfil .contenedor-perfil2 {
+  width: 75%;
+  }
+  .info .abogados{
+  width: 90%;
+  }
+  .info .gran-padre{
+  width: 70%;
+  }
+  .info .boton{
+  width: 35%;
+  }
+}
+
+@media screen and (max-width: 1300px) {
+    .relleno{
+    height: 80px;
+  }
+  header .contenedor-header .celymail p {
+    font-size: 13px;
+  }
+    .inicio .contenedor-ambos {
+    width: 85%;
+  }
+  .inicio .contenedor-ambos .contenedor-formulario .formulario {
+  margin: 0 auto;
+  height: 55%;            
+  }
+  .inicio .contenedor-ambos .contenedor-formulario .formulario input[type=text] {
+  height: 10%;
+  width: 100%;
+  margin-top: 5%;
+  }
+  .inicio .contenedor-ambos .contenedor-formulario .formulario input[type=email] {
+    width: 100%;
+    height: 10%;
+    margin-top: 5%;
+  }
+  .inicio .contenedor-ambos .contenedor-formulario .formulario textarea {
+    height: 35%;
+    margin-top: 5%;
+  }
+  .info .boton{
+  width: 40%;
+  }
+  .especialidad .contenedor-todo .titulo p{
+  margin: 0;
+  font-size: 30px;
+  font-weight:700;
+  line-height: 1.25;
+  text-align: center;
+  }
+  .info .gran-padre{
+    width: 70%;
+
+  }
+  .info .asociados p{
+    font-size: 35px;
+    font-weight: 700;
+  }
+
+  .info .abogados{
+  width: 75%;
+  }
+
+  .info .abogados p{
+    font-size: 35px;
+    font-weight: 600;
+  }
+  .info .gran-padre .padre1{
+    width: 90%;
+    text-align: center;
+  }
+
+@media screen and (max-width: 1200px) {
+  .relleno{
+    height: 70px;
+  }
+  header .contenedor-header .menu {
+   width: 65%;
+  }
+  header .contenedor-header .menu a {
+    font-size: 13px;
+    margin-right: 4%;
+  }
+  header .contenedor-header .celymail {
+    width: 29.5%;
+  }
+  header .contenedor-header .celymail .fa-whatsapp {
+  font-size: 15px;
+  margin-right: 3%;
+  }
+  header .contenedor-header .celymail .fa-envelope {
+    font-size: 13px;
+    margin-right: 3%;
+  }
+  header .contenedor-header .celymail p {
+    font-size: 12px;
+  }
+
+  .inicio .contenedor-ambos .frase .p1 {
+    font-size: 35px;
+    font-weight: 300;
+  }
+  .inicio .contenedor-ambos .frase p {
+    font-size: 30px;
+    font-weight: 600;
+    line-height: 1.25;
+  }
+  .inicio .contenedor-ambos .contenedor-formulario {
+  width: 45%;
+  }
+  .inicio .contenedor-ambos .contenedor-formulario .asesor p{
+  font-size: 25px;
+  font-weight: 500;
+  line-height: 1.25;
+  }
+  .inicio .contenedor-ambos .contenedor-formulario .formulario {
+    font-size: 15px;
+  }
+  .inicio .contenedor-ambos .contenedor-formulario .whatsapp .p2 {
+    font-size: 25px;
+    font-weight: 500;
+  }
+
+  .inicio .contenedor-ambos .contenedor-formulario .whatsapp .conte-boton p {
+    font-size: 15px;
+    font-weight: 400;
+  }
+  .inicio .contenedor-ambos .contenedor-formulario .whatsapp .conte-boton .fa-whatsapp {
+    font-size: 15px;
+    color: #fff;
+    margin-right: 5%;
+    vertical-align: middle;
+  }
+  .inicio .contenedor-ambos .contenedor-formulario .whatsapp .conte-boton a {
+    margin: auto;
+    display: block;
+    font-size: 13px;
+    font-weight: 400;
+    text-align: center;
+    color: #fff;
+    background: #128c7e;
+    text-decoration: none;
+    padding: 8% 0;
+    border-radius: 25px
+  }
+  .sinadelanto .caja p{
+    font-weight: 300;
+    font-size: 15px;
+  }
+  .especialidad {
+  min-height: 300px;
+  }
+  .especialidad .contenedor-todo .titulo p{
+  font-size: 25px;
+  font-weight: 700;
+  }
+  .especialidad .contenedor-todo .contenedor-padre .hijo p{
+  font-size: 20px;
+  font-weight: 600;
+  }
+    .perfil .contenedor-perfil .padre-izq-perfil p {
+    font-size: 35px;
+    font-weight: 700;
+  }
+
+  .perfil .contenedor-perfil .padre-der-perfil p {
+    font-size: 15px;
+    font-weight: 300;
+  }
+
+  .perfil .contenedor-perfil2 .padre-izq-perfil2 p {
+    font-size: 15px;
+    font-weight: 300;
+  }
+  .perfil {
+  min-height: 420px;
+  }
+  .perfil .contenedor-perfil2 .padre-der-perfil3 img {
+  width: 45%;
+  }
+  .nos-eligen {
+  height: 70%;
+  min-height: 550px;
+  }
+  .nos-eligen .titu p{
+    font-size: 35px;
+  }
+  .nos-eligen .gran-padre .padre1 .titular{
+    font-size: 17px;
+    font-weight: 600;
+  }
+  .nos-eligen .gran-padre .padre1 p{
+    font-size: 15px;
+  }
+  .nos-eligen .gran-padre .padre2 .titular{
+    font-size: 17px;
+    font-weight: 600;
+  }
+  .nos-eligen .gran-padre .padre2 p{
+    font-size: 15px;
+    font-weight: 400;
+  }
+  .info{
+  height: 37%;
+  min-height: 400px;
+  }
+
+
+  .info .asociados p{
+    font-size: 25px;
+    font-weight: 700;
+  }
+
+  .info .abogados{
+    width: 65%;
+  }
+
+  .info .abogados p{
+    font-size: 27px;
+    font-weight: 600;
+  }
+
+
+  .info .gran-padre .padre1 .fa-whatsapp{
+    font-size: 17px;
+    color: #25d366;
+    margin-right: 2%;
+    vertical-align: middle;
+  }
+  .info .gran-padre .padre1 .fa-envelope {
+    font-size: 17px;
+    color: #168de2;
+    margin-right: 2%;
+    vertical-align: middle;
+  }
+  .info .gran-padre .padre1 p{
+    font-size: 17px;
+    font-weight: 500;
+    color: #000;
+    margin: 0;
+  }
+
+  .info .ubicacion p{
+    font-size: 17px;
+    font-weight: 500;
+    color: #000;
+    margin: 0;
+  }
+
+  .info .ubicacion .fa-map-marker-alt {
+    font-size: 20px;
+    color: #FFBD21;
+    margin-right: 3%;
+    vertical-align: middle;
+  }
+
+  .info .boton{
+    width: 35%;
+  }
+
+
+  .info  .boton a {
+    font-size: 15px;
+    font-weight: 600;
+
+  }
+
+}
+@media screen and (max-width: 1000px) {
+   .relleno{
+    height: 60px;
+  }
+  header .contenedor-header{
+    width: 95%;
+  }
+    header .contenedor-header .menu {
+   width: 65%;
+  }
+  header .contenedor-header .menu a {
+    font-size: 10px;
+    margin-right: 3%;
+  }
+  header .contenedor-header .celymail .fa-whatsapp {
+  font-size: 10px;
+  margin-right: 2.5%;
+  }
+  header .contenedor-header .celymail .fa-envelope {
+    font-size: 10px;
+    margin-right: 2.5%;
+  }
+  header .contenedor-header .celymail p {
+    font-size: 10px;
+  }
+  .perfil .contenedor-perfil {
+    width: 80%;
+  }
+  .perfil .contenedor-perfil2 {
+    width: 80%;
+  }
+  .perfil .contenedor-perfil2 .padre-der-perfil3 img {
+  width: 55%;
+  }
+  .info .abogados{
+    width: 75%;
+  }
+  .info .boton{
+    width: 40%;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .relleno{
+    height: 50px;
+  }
+
+  .inicio {
+    height: 65%;
+   min-height: 550px;
+  }
+  .inicio .contenedor-ambos .frase .p1 {
+    font-size: 25px;
+    font-weight: 300;
+  }
+  .inicio .contenedor-ambos .frase p {
+    font-size: 25px;
+    font-weight: 600;
+    line-height: 1.25;
+  }
+  .inicio .contenedor-ambos .contenedor-formulario {
+  width: 45%;
+  }
+  .inicio .contenedor-ambos .contenedor-formulario .asesor p{
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 1.25;
+  }
+  .inicio .contenedor-ambos .contenedor-formulario .formulario {
+    font-size: 13px;
+  }
+  .inicio .contenedor-ambos .contenedor-formulario .whatsapp .p2 {
+    font-size: 20px;
+    font-weight: 500;
+  }
+
+  .inicio .contenedor-ambos .contenedor-formulario .whatsapp .conte-boton p {
+    font-size: 13px;
+    font-weight: 400;
+  }
+  .inicio .contenedor-ambos .contenedor-formulario .whatsapp .conte-boton .fa-whatsapp {
+    font-size: 13px;
+    color: #fff;
+    margin-right: 5%;
+    vertical-align: middle;
+  }
+  .inicio .contenedor-ambos .contenedor-formulario .whatsapp .conte-boton a {
+    margin: auto;
+    display: block;
+    font-size: 11px;
+    font-weight: 400;
+    text-align: center;
+    color: #fff;
+    background: #128c7e;
+    text-decoration: none;
+    padding: 8% 0;
+    border-radius: 25px
+  }
+  .sinadelanto .caja p{
+    font-weight: 300;
+    font-size: 13px;
+  }
+  .especialidad {
+    height: 27%;
+  min-height: 200px;
+  }
+  .especialidad .contenedor-todo .titulo p{
+  font-size: 20px;
+  font-weight: 700;
+  }
+  .especialidad .contenedor-todo .contenedor-padre .hijo p{
+  font-size: 16px;
+  font-weight: 600;
+  }
+    .perfil .contenedor-perfil .padre-izq-perfil p {
+    font-size: 30px;
+    font-weight: 700;
+  }
+
+  .perfil .contenedor-perfil .padre-der-perfil p {
+    font-size: 13px;
+    font-weight: 300;
+  }
+
+  .perfil .contenedor-perfil2 .padre-izq-perfil2 p {
+    font-size: 13px;
+    font-weight: 300;
+  }
+  .perfil {
+    height:  45%;
+  min-height: 350px;
+  }
+  .perfil .contenedor-perfil {
+  width: 90%;
+  }
+  .perfil .contenedor-perfil2 {
+  width: 90%;
+  }
+  .perfil .contenedor-perfil2 .padre-der-perfil3 img {
+  width: 55%;
+  }
+  .nos-eligen {
+  height: 60%;
+  min-height: 450px;
+  }
+
+  .nos-eligen .gran-padre{
+  width: 90%;
+  }
+   .nos-eligen .titu{
+    margin-left: 4%;
+   }
+  .nos-eligen .titu p{
+    font-size: 30px;
+  }
+  .nos-eligen .gran-padre .padre1 .titular{
+    font-size: 15px;
+    font-weight: 600;
+  }
+  .nos-eligen .gran-padre .padre1 p{
+    font-size: 13px;
+  }
+  .nos-eligen .gran-padre .padre2 .titular{
+    font-size: 15px;
+    font-weight: 600;
+  }
+  .nos-eligen .gran-padre .padre2 p{
+    font-size: 13px;
+    font-weight: 400;
+  }
+  .info{
+  height: 30%;
+  min-height: 350px;
+  }
+
+
+  .info .asociados p{
+    font-size: 20px;
+    font-weight: 700;
+  }
+
+  .info .abogados{
+    width: 75%;
+  }
+
+  .info .abogados p{
+    font-size: 20px;
+    font-weight: 600;
+  }
+
+  .info .gran-padre{
+    width: 75%;
+  }
+
+  .info .gran-padre .padre1 .fa-whatsapp {
+    font-size: 15px;
+    color: #25d366;
+    margin-right: 2%;
+    vertical-align: middle;
+  }
+  .info .gran-padre .padre1 .fa-envelope{
+    font-size: 15px;
+    color: #168de2;
+    margin-right: 2%;
+    vertical-align: middle;
+  }
+  .info .gran-padre .padre1 p{
+    font-size: 15px;
+    font-weight:500;
+    color: #000;
+    margin: 0;
+  }
+
+  .info .ubicacion p{
+    font-size: 15px;
+    font-weight: 500;
+    color: #000;
+    margin: 0;
+  }
+
+  .info .ubicacion .fa-map-marker-alt {
+    font-size: 15px;
+    color: #FFBD21;
+    margin-right: 3%;
+    vertical-align: middle;
+  }
+
+  .info .boton{
+    width: 45%;
+  }
+
+
+  .info  .boton a {
+    font-size: 13px;
+    font-weight: 600;
+
+  }
+
+}
+@media screen and (max-width: 800px) {
+   header .contenedor-header .celymail p {
+    font-size: 8.5px;
+  }
+}
+@media screen and (max-width: 700px) {
+
+  header {
+    position: initial;
+    height: 17%;
+    min-height: 120px;
+    background: #000;
+    width: 100%;
+    border-bottom: 2px solid #FFBD21;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0.5% 0;
+  } 
+  header .contenedor-header{
+    display: none;
+  }
+  header .contenedor-headerx {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 100%;
+    height: 80%;
+  }
+  header .contenedor-headerx .imagen{
+    width: 40%;
+    display: flex;
+    justify-content: center;
+  }
+   header .contenedor-headerx .imagen img {
+    width: 50%;
+    display: block;
+    margin: auto;
+  }
+  header .contenedor-headerx .celymail {
+    width: 60%;
+    text-align: center;
+    margin: auto 0;
+  }
+  header .contenedor-headerx .celymail .fa-whatsapp {
+    font-size: 15px;
+    color: #25d366;
+    margin-right: 3%;
+    vertical-align: middle;
+  }
+  header .contenedor-headerx .celymail .fa-envelope {
+    font-size: 13px;
+    color: #168de2;
+    margin-right: 3%;
+    vertical-align: middle;
+  }
+  header .contenedor-headerx .celymail p {
+    font-size: 12px;
+    font-weight: 500;
+    color: #fff;
+    margin: 0;
+  }
+  header .navegacion{
+  display: initial;
+  }
+  header .navegacion {
+   width: 100%;
+   height: 20%;
+   text-align: center;
+   display: flex;
+   flex-direction: row;
+   justify-content: space-evenly;
+   padding: 5px 0 0 0;
+   align-items: center;
+   border-top: 2px solid #FFBD21;
+  }
+  header .navegacion a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 10px;
+    font-weight: 400;
+  }
+  header .navegacion .a1 {
+    margin-right: 0;
+  }
+
+  header .navegacion a:hover {
+    color: #FFBD21;
+    transition: all 0.4s ease;
+  }
+  .relleno{
+    display: none;
+  }
+  .inicio {
+    height: 110%;
+    min-height: 840px;
+    background: url("../img/autosvertical.jpg"), #000;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+  .inicio .contenedor-ambos {
+    display: none;
+  }
+  .inicio .contenedor-ambosx {
+    width:100%;
+    height:100%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+  }
+
+  .inicio .contenedor-ambosx .frase {
+    width: 80%;
+    height: 28%;
+    margin:  0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .inicio .contenedor-ambosx .frase p {
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 1.25;
+    color: #fff;
+    vertical-align: middle;
+    margin: 0 auto 10%;
+  }
+
+  .inicio .contenedor-ambosx .frase .p1 {
+    font-family: "Montserrat";
+    font-size: 20px;
+    color: #fff;
+    font-weight: 300;
+    line-height: 1.25;
+    vertical-align: middle;
+    margin: 0;
+  }
+
+
+  .inicio .contenedor-ambosx .contenedor-formulario {
+    width: 80%;
+    height: 50%;
+    margin:  0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .inicio .contenedor-ambosx .contenedor-formulario .formulario {
+    margin: 0 auto;
+    height:100%;            
+    width: 80%;
+    font-size: 15px;
+  }
+
+  .inicio .contenedor-ambosx .contenedor-formulario .formulario input[type=text] {
+    height: 15%;
+    width: 100%;
+    color: #FFBD21;
+    background: none;
+    outline: none;
+    border: none;
+    border-bottom: 1px solid #fff;
+  }
+  .inicio .contenedor-ambosx .contenedor-formulario .formulario .nombre {
+    margin-right: 4%;
+  }
+  .inicio .contenedor-ambosx .contenedor-formulario .formulario input[type=text]::placeholder {
+    color: #fff;
+  }
+  .inicio .contenedor-ambosx .contenedor-formulario .formulario input[type=email] {
+    width: 100%;
+    height: 15%;
+    margin-top: 3%;
+    background: none;
+    color: #FFBD21;
+    outline: none;
+    border: none;
+    display: block;
+    border-bottom: 1px solid #fff;
+  }
+  .inicio .contenedor-ambosx .contenedor-formulario .formulario input[type=email]::placeholder {
+    color: #fff;
+  }
+  .inicio .contenedor-ambosx .contenedor-formulario .formulario textarea {
+    background: none;
+    color: #FFBD21;
+    outline: none;
+    border: none;
+    border-bottom: 1px solid #fff;
+    resize: none;
+    width: 100%;
+    height: 35%;
+    margin-top: 5%;
+  }
+
+  .inicio .contenedor-ambosx .contenedor-formulario .formulario textarea::placeholder {
+    color: #fff;
+  }
+  .inicio .contenedor-ambosx .contenedor-formulario .formulario input[type=submit] {
+    cursor: pointer;
+    background: none;
+    border: none;
+    border-radius: 15px;
+    padding: 1% 2%;
+    color: #fff;
+    margin: 5% auto 0;
+    display: block;
+  }
+
+  .inicio .contenedor-ambosx .contenedor-formulario .formulario input[type=submit]:hover {
+    border: solid 2px #FFBD21;
+    color: #FFBD21 ;
+    transition: all 0.2s ease;
+  }
+
+  .inicio .contenedor-ambosx .whatsapp{
+    height: 20%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .inicio .contenedor-ambosx .whatsapp .p2 {
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 1.25;
+    margin: 0 auto 0;
+    text-align: center;
+  }
+
+  .inicio .contenedor-ambosx .whatsapp .conte-boton {
+    margin: 20px auto 0;
+    height: 40%;
+    width: 30%;
+    border-radius: 4.5px;
+    overflow: hidden;
+  }
+  .inicio .contenedor-ambosx .whatsapp .conte-boton p {
+    font-size: 15px;
+    font-weight: 400;
+    text-align: center;
+    color: #fff;
+    margin: 0 0;
+  }
+  .inicio .contenedor-ambosx .whatsapp .conte-boton .fa-whatsapp {
+    font-size: 15px;
+    color: #fff;
+    margin-right: 5%;
+    vertical-align: middle;
+  }
+  .inicio .contenedor-ambosx .whatsapp .conte-boton a {
+    margin: auto;
+    display: block;
+    font-size: 13px;
+    font-weight: 400;
+    text-align: center;
+    color: #fff;
+    background: #128c7e;
+    text-decoration: none;
+    padding: 8% 0;
+    border-radius: 25px
+  }
+
+  .inicio .contenedor-ambosx .whatsapp .conte-boton a:hover {
+    border: solid 2px #fff;
+    border-radius: 25px;
+    font-weight: 500;
+    transition: all 0.2s ease;
+  }
+
+  .sinadelanto .caja p{
+    font-weight: 300;
+    font-size: 14px;
+  }
+  .especialidad {
+    height: 25%;
+    min-height: 205px;
+  }
+  .especialidad .contenedor-todo .titulo p{
+    font-size: 17px;
+    font-weight: 700;
+  }
+  .especialidad .contenedor-todo .contenedor-padre .hijo p{
+    font-size: 14px;
+    font-weight: 600;
+  }
+  .especialidad .contenedor-todo{
+    width: 90%;
+    height: 100%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+  }
+  .especialidad .contenedor-todo .titulo hr{
+    height: 1px;
+    width: 20%;
+    display: block;
+    margin: auto;
+    background: #000;
+  }
+  .perfil {
+  height: 30%;
+  min-height: 230px;
+  width: 100%;
+  background: #0f0f0f;
+  color: #fff;
+  }
+  .perfil .contenedor-perfil {
+  display: none;
+  }
+  .perfil .contenedor-perfil2 {
+  display: none;
+  }
+  .perfil .contenedor-perfil3 {
+  display: none;
+  }
+  .perfil .contenedor-perfilx {
+    height: 100%;
+    width: 85%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .perfil .contenedor-perfilx .titulo{
+    height: 20%;
+    font-size: 25px;
+    font-weight: 700;
+    line-height: 1.25;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+  }
+  .perfil .contenedor-perfilx .parrafo{
+    height:  60%;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 1.25;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    text-align: center;
+  }
+  .perfil .contenedor-perfilx .parrafo p{
+    margin: 0;
+  }
+  .perfil .contenedor-perfilx .titulo p{
+    margin: 0;
+  }
+  .nos-eligen .gran-padre{
+    display: none;
+  }
+  .nos-eligen {
+    height: 80%;
+    min-height: 635px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    overflow: hidden;
+  }
+  .nos-eligen .titu{
+    text-align: center;
+    height: 15%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .nos-eligen .titu p{
+    font-size: 25px;
+    font-weight: 700;
+    line-height: 1.25;
+    margin: 0;
+  }
+  .nos-eligen .padrex {
+    height: 85%;
+    width: 90%;
+    margin:  0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+  }
+  .nos-eligen .padrex .titular{
+    font-size: 15px;
+    font-weight: 600;
+    line-height: 1.25;
+    margin: 0 3% 0 0;
+    background: #F4B622;
+    padding: 0.5% 2%;
+    border-radius: 25px;
+  
+  }
+  .info{
+  height: 30%;
+  min-height: 350px;
+  background-position: 0% 0%
+  }
+
+
+  .info .asociados p{
+    font-size: 20px;
+    font-weight: 700;
+  }
+
+  .info .abogados{
+    width: 75%;
+  }
+
+  .info .abogados p{
+    font-size: 17px;
+    font-weight: 600;
+  }
+
+  .info .gran-padre{
+    width: 75%;
+  }
+
+  .info .gran-padre .padre1 .fa-whatsapp{
+    font-size: 13px;
+    color: #25d366;
+    margin-right: 2%;
+    vertical-align: middle;
+  }
+  .info .gran-padre .padre1 .fa-envelope{
+    font-size: 13px;
+    color: #168de2;
+    margin-right: 2%;
+    vertical-align: middle;
+  }
+  .info .gran-padre .padre1 p{
+    font-size: 13px;
+    font-weight:500;
+    color: #000;
+    margin: 0;
+  }
+
+  .info .ubicacion{
+    width: 61%;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  .info .ubicacion p{
+    font-size: 13px;
+    font-weight: 500;
+    color: #000;
+    margin: 0;
+  }
+
+  .info .ubicacion .fa-map-marker-alt {
+    font-size: 13px;
+    color: #FFBD21;
+    margin-right: 3%;
+    vertical-align: middle;
+  }
+
+  .info .boton{
+    width: 55%;
+    height: 15%;
+  }
+
+
+  .info  .boton a {
+    font-size: 13px;
+    font-weight: 600;
+
+  }
+
+
+  footer p{
+    font-size: 11px;
+  }
+} 
+
+@media screen and (max-width: 600px) {
+   .info .abogados{
+    width: 90%;
+  }
+
+  .info .gran-padre{
+    width: 95%;
+  }
+
+  .info .boton{
+    width: 65%;
+  }
+}}
