@@ -20,7 +20,7 @@
     <link rel="stylesheet" href="css/normalize.css" />
     <link rel="stylesheet" href="css/sweetalert2.min.css" />
 
-    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon.jpg" />
 
     <script src="js/jquery-3.6.0.min.js"></script>
     <script src="js/sweetalert2.all.min.js"></script>
@@ -29,6 +29,15 @@
       src="https://kit.fontawesome.com/b47d0800bc.js"
       crossorigin="anonymous"
     ></script>
+
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"
+    ></script>
+
+    <script type="text/javascript">
+      emailjs.init("_VWXs5_aO3Qmh3PDl");
+    </script>
   </head>
   <body>
     <header>
@@ -114,32 +123,32 @@
               id="name"
               placeholder="Nombre Completo"
               required
-              name="nombre"
+              name="name"
               class="nombre"
             />
             <input
               autocomplete="off"
               type="text"
-              id="contact"
+              id="phone"
               placeholder="Teléfono"
               required
-              name="telefono"
+              name="phone"
             />
             <input
               autocomplete="off"
               type="email"
-              id="mail"
+              id="email"
               placeholder="E-mail"
               required
-              name="correo"
+              name="email"
             />
             <textarea
-              name="mensaje"
+              name="message"
               id="message"
               required
               placeholder="Consulta"
             ></textarea>
-            <input id="submitEmail" type="submit" value="Enviar Consulta" />
+            <input id="submitForm" type="submit" value="Enviar Consulta" />
           </form>
           <div class="whatsapp">
             <p class="p2">O envianos un <b>Whatsapp</b></p>
@@ -174,28 +183,28 @@
               id="name2"
               placeholder="Nombre Completo"
               required
-              name="nombre"
+              name="name2"
               class="nombre"
             />
             <input
               autocomplete="off"
               type="text"
-              id="contact2"
+              id="phone2"
               placeholder="Teléfono"
               required
-              name="telefono"
+              name="phone2"
             />
             <input
               autocomplete="off"
               type="email"
-              id="mail2"
+              id="email2"
               placeholder="E-mail"
               required
-              name="correo"
+              name="email2"
             />
             <textarea
               autocomplete="off"
-              name="mensaje"
+              name="message2"
               id="message2"
               required
               placeholder="Consulta"
